@@ -1,17 +1,16 @@
 package com.todo_list.service;
 
-import com.todo_list.dto.TodoDto;
 import com.todo_list.entity.Todo;
 
 import java.util.List;
 
 public interface TodoService {
 
-    List<TodoDto> getAll();
+    List<Todo> list();
 
-    List<TodoDto> create(TodoDto todoDto);
+    List<Todo> create(Todo todo);
 
-    List<TodoDto> update(Long id, TodoDto todoDto);
+    List<Todo> update(Long id, Todo todo);
 
-    List<TodoDto> delete(Long id);
+    List<Todo> delete(Long id);
 }
